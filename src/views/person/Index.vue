@@ -1,6 +1,25 @@
 <template>
 	<div id="person">
-		<div class="header"></div>
+		<div class="header">
+			<div class="title">个人中心</div>
+			<ul class="info">
+				<li>
+					<img src="../../assets/image/person/index/header.jpg" alt="">
+				</li>
+				<li class="info-content">
+					<p>15865656985</p>
+					<div>
+						<span>普通会员</span>
+						<router-link to="">充值会员</router-link>
+					</div>
+				</li>
+				<li>
+					<router-link to="">
+						<img src="../../assets/image/person/index/arrow.png" alt="">
+					</router-link>
+				</li>
+			</ul>
+		</div>
 		<div class="content">
 			<ul class="content-top common-style">
 				<li>
@@ -81,13 +100,59 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.header {
-		height: 3.25rem;
-		background: linear-gradient(to Right, #fe665f, #feaea0)
+		/* width: 7.5rem; */
+		height: 3.82rem;
+		background: url(../../assets/image/person/index/banner.png) no-repeat;
+		background-size: 7.5rem 3.82rem;
+	}
+	.title {
+		padding: .25rem 0;
+		font-size: .36rem;
+		color: #fff;
+		text-align: center;
+		letter-spacing: .02rem;
+	}
+	.info {
+		margin-top: .2rem;
+		padding: 0 .3rem;
+		display: flex;
+		align-items: center;
+	}
+	.info li:first-child img {
+		display: inline-block;
+		width: 1.3rem;
+		height: 1.3rem;
+		border-radius: .65rem;
+	}
+	.info-content {
+		margin-left: .4rem;
+		flex: 1;
+		font-size: .3rem;
+		color: #fff;
+		letter-spacing: .02rem;
+	}
+	.info-content>div {
+		margin-top: .2rem;
+		display: flex;
+	}
+	.info-content a {
+		margin-left: .15rem;
+		display: inline-block;
+		padding: .07rem .15rem;
+		background: #fff;
+		border-radius: .2rem;
+		font-size: .2rem;
+		color: #e94230;
+	}
+	.info li:last-child img {
+		display: inline-block;
+		width: .18rem;
+		height: .33rem;
 	}
 	.content {
-		margin-top: -.6rem;
+		margin-top: -.8rem;
 		padding: 0 .3rem;	
 	}
 	.common-style {
@@ -126,7 +191,7 @@
 		display: inline-block;
 		width: .31rem;
 		height: .31rem;
-		background: url('../../assets/image/person/icon.png') no-repeat;
+		background: url('../../assets/image/person/index/icon.png') no-repeat;
 		background-size: 2.8rem 2rem;
 	}
 	.icon-withdraw {

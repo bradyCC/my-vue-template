@@ -11,6 +11,12 @@ export default new Router({
       component: () => import('./views/person/Index.vue'),
 			title: '个人中心'
     },
+		{
+		  path: '/invite',
+		  name: 'invite',
+		  component: () => import('./views/person/Invite.vue'),
+			title: '邀请赚钱'
+		},
     // {
     //   path: '/about',
     //   name: 'about',
