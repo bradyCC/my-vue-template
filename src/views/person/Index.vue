@@ -1,8 +1,8 @@
 <template>
 	<div id="person">
-		<div class="header">
-			<div class="title">个人中心</div>
-			<ul class="info">
+		<div class="person-header">
+			<div class="person-title">个人中心</div>
+			<ul class="person-info">
 				<li>
 					<img src="../../assets/image/person/index/header.jpg" alt="">
 				</li>
@@ -20,7 +20,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content">
+		<div class="person-content">
 			<ul class="content-top common-style">
 				<li>
 					<span class="money-style">20</span>
@@ -101,26 +101,26 @@
 </script>
 
 <style scoped>
-	.header {
+	.person-header {
 		/* width: 7.5rem; */
 		height: 3.82rem;
 		background: url(../../assets/image/person/index/banner.png) no-repeat;
 		background-size: 7.5rem 3.82rem;
 	}
-	.title {
+	.person-title {
 		padding: .25rem 0;
 		font-size: .36rem;
 		color: #fff;
 		text-align: center;
 		letter-spacing: .02rem;
 	}
-	.info {
+	.person-info {
 		margin-top: .2rem;
 		padding: 0 .3rem;
 		display: flex;
 		align-items: center;
 	}
-	.info li:first-child img {
+	.person-info li:first-child img {
 		display: inline-block;
 		width: 1.3rem;
 		height: 1.3rem;
@@ -146,12 +146,12 @@
 		font-size: .2rem;
 		color: #e94230;
 	}
-	.info li:last-child img {
+	.person-info li:last-child img {
 		display: inline-block;
 		width: .18rem;
 		height: .33rem;
 	}
-	.content {
+	.person-content {
 		margin-top: -.8rem;
 		padding: 0 .3rem;	
 	}

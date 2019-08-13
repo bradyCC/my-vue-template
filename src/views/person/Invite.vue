@@ -1,6 +1,6 @@
 <template>
 	<div id="invite">
-		<div class="header">
+		<div class="invite-header">
 			<ul class="header-top">
 				<li>
 					<span>商家邀请码</span>
@@ -44,7 +44,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="content">
+		<div class="invite-content">
 			<div class="reward-rules">
 				<div>
 					<p class="reward-rules-title">
@@ -231,7 +231,7 @@
 		background: #fff;
 		padding-bottom: 1rem;
 	}
-	.header {
+	.invite-header {
 		padding-top: 3.4rem;
 		box-sizing: border-box;
 		/* width: 7.5rem; */
@@ -299,7 +299,7 @@
 		border: .01rem solid #f64041;
 		border-radius: .2rem;
 	}
-	.content {
+	.invite-content {
 		padding: 0 .33rem;
 	}
 	.reward-rules {}
